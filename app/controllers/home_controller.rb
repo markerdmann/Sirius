@@ -6,7 +6,7 @@ class HomeController < ApplicationController
     @user = current_user
     if !@user.access_token
       scope = 'http://www.google.com/calendar/feeds/'
-      next_url = 'http://localhost:3000/google/callback'
+      next_url = 'http://siriusly.herokuapp.com/google/callback'
       secure = false  # set secure = true for signed AuthSub requests
       sess = true
       @authsub_link = GData::Auth::AuthSub.get_url(next_url, scope, secure, sess)
