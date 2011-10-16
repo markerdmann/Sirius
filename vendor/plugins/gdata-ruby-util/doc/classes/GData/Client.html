@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Module: GData::Client</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <meta http-equiv="Content-Script-Type" content="text/javascript" />
+  <link rel="stylesheet" href="../.././rdoc-style.css" type="text/css" media="screen" />
+  <script type="text/javascript">
+  // <![CDATA[
+
+  function popupCode( url ) {
+    window.open(url, "Code", "resizable=yes,scrollbars=yes,toolbar=no,status=no,height=150,width=400")
+  }
+
+  function toggleCode( id ) {
+    if ( document.getElementById )
+      elem = document.getElementById( id );
+    else if ( document.all )
+      elem = eval( "document.all." + id );
+    else
+      return false;
+
+    elemStyle = elem.style;
+    
+    if ( elemStyle.display != "block" ) {
+      elemStyle.display = "block"
+    } else {
+      elemStyle.display = "none"
+    }
+
+    return true;
+  }
+  
+  // Make codeblocks hidden by default
+  document.writeln( "<style type=\"text/css\">div.method-source-code { display: none }</style>" )
+  
+  // ]]>
+  </script>
+
+</head>
+<body>
+
+
+
+    <div id="classHeader">
+        <table class="header-table">
+        <tr class="top-aligned-row">
+          <td><strong>Module</strong></td>
+          <td class="class-name-in-header">GData::Client</td>
+        </tr>
+        <tr class="top-aligned-row">
+            <td><strong>In:</strong></td>
+            <td>
+                <a href="../../files/lib/gdata/client/apps_rb.html">
+                lib/gdata/client/apps.rb
+                </a>
+        <br />
+                <a href="../../files/lib/gdata/client/base_rb.html">
+                lib/gdata/client/base.rb
+                </a>
+        <br />
+                <a href="../../files/lib/gdata/client/blogger_rb.html">
+                lib/gdata/client/blogger.rb
+                </a>
+        <br />
+                <a href="../../files/lib/gdata/client/booksearch_rb.html">
+                lib/gdata/client/booksearch.rb
+                </a>
+        <br />
+                <a href="../../files/lib/gdata/client/calendar_rb.html">
+                lib/gdata/client/calendar.rb
+                </a>
+        <br />
+                <a href="../../files/lib/gdata/client/contacts_rb.html">
+                lib/gdata/client/contacts.rb
+                </a>
+        <br />
+                <a href="../../files/lib/gdata/client/doclist_rb.html">
+                lib/gdata/client/doclist.rb
+                </a>
+        <br />
+                <a href="../../files/lib/gdata/client/finance_rb.html">
+                lib/gdata/client/finance.rb
+                </a>
+        <br />
+                <a href="../../files/lib/gdata/client/gbase_rb.html">
+                lib/gdata/client/gbase.rb
+                </a>
+        <br />
+                <a href="../../files/lib/gdata/client/gmail_rb.html">
+                lib/gdata/client/gmail.rb
+                </a>
+        <br />
+                <a href="../../files/lib/gdata/client/health_rb.html">
+                lib/gdata/client/health.rb
+                </a>
+        <br />
+                <a href="../../files/lib/gdata/client/notebook_rb.html">
+                lib/gdata/client/notebook.rb
+                </a>
+        <br />
+                <a href="../../files/lib/gdata/client/photos_rb.html">
+                lib/gdata/client/photos.rb
+                </a>
+        <br />
+                <a href="../../files/lib/gdata/client/spreadsheets_rb.html">
+                lib/gdata/client/spreadsheets.rb
+                </a>
+        <br />
+                <a href="../../files/lib/gdata/client/webmaster_tools_rb.html">
+                lib/gdata/client/webmaster_tools.rb
+                </a>
+        <br />
+                <a href="../../files/lib/gdata/client/youtube_rb.html">
+                lib/gdata/client/youtube.rb
+                </a>
+        <br />
+                <a href="../../files/lib/gdata/client_rb.html">
+                lib/gdata/client.rb
+                </a>
+        <br />
+            </td>
+        </tr>
+
+        </table>
+    </div>
+  <!-- banner header -->
+
+  <div id="bodyContent">
+
+
+
+  <div id="contextContent">
+
+
+
+   </div>
+
+
+  </div>
+
+
+    <!-- if includes -->
+
+    <div id="section">
+
+    <div id="class-list">
+      <h3 class="section-bar">Classes and Modules</h3>
+
+      Class <a href="Client/Apps.html" class="link">GData::Client::Apps</a><br />
+Class <a href="Client/AuthorizationError.html" class="link">GData::Client::AuthorizationError</a><br />
+Class <a href="Client/BadRequestError.html" class="link">GData::Client::BadRequestError</a><br />
+Class <a href="Client/Base.html" class="link">GData::Client::Base</a><br />
+Class <a href="Client/Blogger.html" class="link">GData::Client::Blogger</a><br />
+Class <a href="Client/BookSearch.html" class="link">GData::Client::BookSearch</a><br />
+Class <a href="Client/Calendar.html" class="link">GData::Client::Calendar</a><br />
+Class <a href="Client/CaptchaError.html" class="link">GData::Client::CaptchaError</a><br />
+Class <a href="Client/Contacts.html" class="link">GData::Client::Contacts</a><br />
+Class <a href="Client/DocList.html" class="link">GData::Client::DocList</a><br />
+Class <a href="Client/Error.html" class="link">GData::Client::Error</a><br />
+Class <a href="Client/Finance.html" class="link">GData::Client::Finance</a><br />
+Class <a href="Client/GBase.html" class="link">GData::Client::GBase</a><br />
+Class <a href="Client/GMail.html" class="link">GData::Client::GMail</a><br />
+Class <a href="Client/Health.html" class="link">GData::Client::Health</a><br />
+Class <a href="Client/Notebook.html" class="link">GData::Client::Notebook</a><br />
+Class <a href="Client/Photos.html" class="link">GData::Client::Photos</a><br />
+Class <a href="Client/RequestError.html" class="link">GData::Client::RequestError</a><br />
+Class <a href="Client/ServerError.html" class="link">GData::Client::ServerError</a><br />
+Class <a href="Client/Spreadsheets.html" class="link">GData::Client::Spreadsheets</a><br />
+Class <a href="Client/UnknownError.html" class="link">GData::Client::UnknownError</a><br />
+Class <a href="Client/VersionConflictError.html" class="link">GData::Client::VersionConflictError</a><br />
+Class <a href="Client/WebmasterTools.html" class="link">GData::Client::WebmasterTools</a><br />
+Class <a href="Client/YouTube.html" class="link">GData::Client::YouTube</a><br />
+
+    </div>
+
+
+
+
+      
+
+
+    <!-- if method_list -->
+
+
+  </div>
+
+
+<div id="validator-badges">
+  <p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+</div>
+
+</body>
+</html>

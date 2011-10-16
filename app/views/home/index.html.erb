@@ -1,0 +1,6 @@
+<h1>Hello, <%= @user.first_name %></h1>
+<% if @user.access_token %>
+  Your access token is <%= @user.access_token %>
+<% else %>
+  Click <a href="<%= @authsub_link %>">this link</a> to authorize sirius.
+<% end %>
