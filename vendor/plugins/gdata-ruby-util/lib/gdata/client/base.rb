@@ -120,7 +120,12 @@ module GData
       
       # Performs an HTTP POST against the API.
       def post(url, body)
-        return self.make_request(:post, url, body)
+        response = self.make_request(:post, url, body)
+        if response.status_code == 302
+          self.make_request(:post, url, body)
+        else
+          response
+        end
       end
       
       # Performs an HTTP POST with the given file
