@@ -22,7 +22,7 @@ class EmailController < ApplicationController
     </entry>
     eos
     client = GData::Client::DocList.new
-    client.authsub_token = User.where(:email => params[:sender]).access_token
+    client.authsub_token = User.where(:email => params[:sender]).first.access_token
     client.post('https://www.google.com/calendar/feeds/default/private/full', xml)
     render json: {:success => true}
   end
